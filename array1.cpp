@@ -4,7 +4,7 @@ using namespace std;
 void find_duplicates(int arr[], int n)
 {
     cout << "Duplicates: ";
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) /////now i am going to change this code and will push on github
     {
         int index = abs(arr[i]);
         if (arr[index] < 0)
