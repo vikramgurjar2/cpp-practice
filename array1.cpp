@@ -6,7 +6,7 @@ void find_duplicates(int arr[], int n)
     cout << "Duplicates: ";
     for (int i = 0; i < n; i++) /////now i am going to change this code and will push on github
     {
-        int index = abs(arr[i]);
+        int index = abs(arr[i]); /// tell me how i push this code on github
         if (arr[index] < 0)
         {
             cout << index << " ";
