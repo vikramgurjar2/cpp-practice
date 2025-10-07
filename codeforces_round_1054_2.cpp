@@ -22,10 +22,8 @@ int main()
             cin >> a[i];
         }
 
-        // Sort the array to bring similar numbers together
         sort(a.begin(), a.end());
 
-        // Pair adjacent elements and find maximum difference
         int max_diff = 0;
         for (int i = 0; i < n; i += 2)
         {
