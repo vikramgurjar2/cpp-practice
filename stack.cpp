@@ -66,6 +66,8 @@ cout<<"the value of the top is "<<st.Top()<<endl;
 st.pop();
 st.pop();
 st.pop();
+ st.top();
+ st.push(1);
 
 cout<<"the value of the top is "<<st.Top()<<endl;
 st.empty();
