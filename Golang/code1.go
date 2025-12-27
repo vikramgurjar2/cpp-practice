@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type Person struct {
 	Name string
@@ -54,5 +57,19 @@ func main() {
 
 	auth := Authentication{"vikram", "1234"}
 	fmt.Println(auth.user())
+	fmt.Println("the channel line starts from here")
+	c := make(chan int)
+
+	go func() {
+		for i := 0; i <= 10; i++ {
+			time.Sleep(time.Second)
+			c <- i
+		}
+		close(c)
+	}()
+
+	for n := range c {
+		fmt.Println(n)
+	}
 
 }
